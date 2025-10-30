@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js",
+    "dev": "npx nodemon server.js",
     "init-badges": "node scripts/initBadges.js",
     "migrate": "node scripts/migrateData.js",
     "setup": "npm install && npm run init-badges && npm run migrate"
