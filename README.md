@@ -216,6 +216,28 @@ fsd-2/
 5. **Student Workflow**:
    - Login → Browse Communities → Join → Register for Events
 
+## 🚀 Deployment
+
+### Frontend (Vercel)
+1. Connect your GitHub repository to Vercel.
+2. Set the root directory to `frontend/`.
+3. Add environment variable: `VITE_API_BASE_URL` = `https://your-railway-backend-url/api` (replace with actual Railway URL).
+4. Deploy automatically on push.
+
+### Backend (Railway)
+1. Connect your GitHub repository to Railway.
+2. Set the root directory to `backend/`.
+3. Add environment variables:
+   - `MONGODB_URI` = Your MongoDB Atlas connection string
+   - `JWT_SECRET` = Your JWT secret
+   - `ADMIN_SECRET` = Your admin secret
+   - `FRONTEND_URL` = Your Vercel frontend URL
+4. Deploy automatically on push.
+
+### Environment Variables Setup
+- **Frontend**: Set `VITE_API_BASE_URL` in Vercel to point to Railway backend.
+- **Backend**: Set MongoDB URI, JWT secret, admin secret, and frontend URL in Railway.
+
 ## 🔮 Future Enhancements
 
 - Real-time chat system
